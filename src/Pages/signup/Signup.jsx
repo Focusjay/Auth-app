@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
+import { useContext } from "react";
 
 const Signup = () => {
+  const { login } = useAuth();
   return (
     <div className="flex justify-center items-center h-screen border bg-gray-500">
       <div className="border border-black bg-white rounded-md p-10">
